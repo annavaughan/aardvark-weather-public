@@ -1,0 +1,17 @@
+python3 ../aardvark/train_module.py \
+    --output_dir FORECAST_PATH/ \
+    --lead_time 1 \
+    --loss lw_rmse_pressure_weighted \
+    --diff 1 \
+    --mode forecast \
+    --in_channels 35 \
+    --out_channels 24 \
+    --int_channels 24 \
+    --decoder vit \
+    --ic era5 \
+    --film 0 \
+    --epoch 200 \
+    --weight_per_variable 0 \
+    --batch_size 24 \
+    --lr 5e-4 \
+    --era5_mode 4u

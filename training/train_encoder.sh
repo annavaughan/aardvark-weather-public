@@ -1,0 +1,16 @@
+python3 ../aardvark/train_module.py \
+    --output_dir ENCODER_PATH \
+    --master_port 12348 \
+    --decoder vit_assimilation \
+    --loss lw_rmse \
+    --diff 0 \
+    --in_channels 277 \
+    --out_channels 24 \
+    --int_channels 24 \
+    --mode assimilation \
+    --lr 5e-4 \
+    --batch_size 6 \
+    --start_ind 0 \
+    --end_ind 24 \
+    --epoch 100 \
+    --weight_per_variable 1
