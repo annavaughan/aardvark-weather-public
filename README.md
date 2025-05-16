@@ -3,7 +3,7 @@
 This repo contains code and weights used to run the Aardvark Weather model (https://www.nature.com/articles/s41586-025-08897-0). We provide sample data, model weights and code to demonstrate how the trained model is run to produce forecasts. 
 
 ## Model weights
-Weights for the trained models presented in the paper are provided in `trained_models/`.
+Weights for the trained model presented in the paper are provided at `https://huggingface.co/datasets/av555/trained_model/`.
 Within this folder there are weights for the encoder, decoder and processor and end to end finetuned weights for one day lead time.
 For the decoder and end-to-end, we provide weights for both temperature and wind speed. 
 
